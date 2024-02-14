@@ -46,8 +46,7 @@ header, footer {
     justify-content: center; 
     align-items: center; 
     text-align: center; 
-    margin-top: 0; 
-    padding-top: 0;
+    margin: 0; 
 }
 /*
     Home Section
@@ -88,6 +87,27 @@ section {
     margin: 20px 0;
 }
 
+/*
+    About 
+*/
+#about{
+    text-align: center;
+    background-color:  #333333;
+    color:white ;
+    margin: 0; 
+}
+#about h3{
+    color: rgb(130, 242, 231);
+}
+
+/*
+    Projects
+*/
+#projects{
+    background-color:white;
+    margin: 0;
+    color: #333333;
+}
 
 form > * {
     margin: 10px 0;
@@ -164,4 +184,13 @@ input[type=text], input[type=email], textarea {
     #navbar li {
         margin: 5px 0; 
     }
+}
+.circle-image {
+    width: 100px; /* Adjust based on your preference */
+    height: 100px; /* Make height equal to the width for a perfect circle */
+    border-radius: 50%; /* This creates the circular shape */
+    object-fit: cover; /* Ensures the image covers the area without stretching. Useful for non-square images */
+    border: 2px solid rgb(130, 242, 231); /* Example: adds a white border */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Example: adds a subtle shadow */
+    margin: 10px;
 }
