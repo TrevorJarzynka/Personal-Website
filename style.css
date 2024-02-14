@@ -36,7 +36,20 @@ header, footer {
     background-color: #ddd;
     color: black;
 }
+#home {
+    background-image: url('marco-meyer-eAAjKAGEKmI-unsplash.jpg');
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; 
+    color: rgb(249, 243, 243); 
+    display: flex;
+    flex-direction: column;
 
+    /*Center text*/
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
 section {
     padding: 20px;
     margin: 20px 0;
@@ -118,3 +131,5 @@ input[type=text], input[type=email], textarea {
         margin: 5px 0; 
     }
 }
+
+
