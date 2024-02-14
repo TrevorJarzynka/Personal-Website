@@ -18,10 +18,9 @@ header, footer {
     padding: 0;
     overflow: hidden;
     background-color: #333333;
-}
-
-#navbar li {
-    float: left;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
 }
 
 #navbar li a {
