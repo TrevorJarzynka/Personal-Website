@@ -33,27 +33,62 @@ header, footer {
 }
 
 #navbar li a:hover {
-    background-color: #ddd;
-    color: black;
+    color: rgb(130, 242, 231);
 }
 #home {
-    background-image: url('marco-meyer-eAAjKAGEKmI-unsplash.jpg');
+    background-image: url('images/marco-meyer-eAAjKAGEKmI-unsplash.jpg');
     background-size: cover; 
     background-position: center; 
     height: 100vh; 
-    color: rgb(249, 243, 243); 
+    color: #443a3a; 
     display: flex;
     flex-direction: column;
-
     /*Center text*/
     justify-content: center; 
     align-items: center; 
     text-align: center; 
+    margin-top: 0; 
+    padding-top: 0;
+}
+/*
+    Home Section
+*/
+#home h1 {
+    font-size: clamp(60px, 10vw, 72px); 
+    margin: 0 auto;
+    text-align: center; 
+}
+.social-links {
+    list-style-type: none; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center;
+    gap: 20px; 
+}
+
+.social-links li {
+    display: inline-block; 
+}
+
+.social-links a {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-decoration: none; 
+}
+.social-links li a:hover i {
+    color: rgb(130, 242, 231); /* Icon hover color */
+}
+
+.social-links i {
+    font-size: 28px; /* Icon size */
+    color: #443a3a; /* Icon color */
 }
 section {
     padding: 20px;
     margin: 20px 0;
 }
+
 
 form > * {
     margin: 10px 0;
@@ -131,5 +166,3 @@ input[type=text], input[type=email], textarea {
         margin: 5px 0; 
     }
 }
-
-
