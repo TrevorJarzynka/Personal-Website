@@ -73,23 +73,23 @@ input[type=text], input[type=email], textarea {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%; /* Makes the background circular */
-    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    border-radius: 50%; 
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; 
 }
 
 #navbar li a.email-link i {
-    font-size: 20px; /* Adjusts the size of the icon */
-    color: #007bff; /* Initial color of the icon */
+    font-size: 20px; 
+    color: #007bff; 
 }
 
 #navbar li a.email-link:hover {
-    background-color: #0056b3; /* Background color on hover */
-    color: white; /* Icon color on hover */
-    box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Adds shadow for depth */
+    background-color: #0056b3; 
+    color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2); 
 }
 
 #navbar li a.email-link:hover i {
-    color: white; /* Ensures the icon color changes on hover */
+    color: white; 
 }
 @keyframes rotate-icon {
     from {
@@ -105,16 +105,16 @@ input[type=text], input[type=email], textarea {
 }
 @media (max-width: 768px) {
     #navbar li a.email-link i {
-        font-size: 16px; /* Smaller icon for mobile devices */
+        font-size: 16px; 
     }
 }
 
 @media (max-width: 480px) {
     #navbar {
-        flex-direction: column; /* Stack the navbar items on smaller screens */
+        flex-direction: column; 
     }
 
     #navbar li {
-        margin: 5px 0; /* Adjust spacing for stacked items */
+        margin: 5px 0; 
     }
 }
