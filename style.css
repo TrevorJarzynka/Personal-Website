@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+#navbar li {
+    float: left;
+}
+
+#navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+form > * {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+#navbar li a.email-link {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Makes the background circular */
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+#navbar li a.email-link i {
+    font-size: 20px; /* Adjusts the size of the icon */
+    color: #007bff; /* Initial color of the icon */
+}
+
+#navbar li a.email-link:hover {
+    background-color: #0056b3; /* Background color on hover */
+    color: white; /* Icon color on hover */
+    box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Adds shadow for depth */
+}
+
+#navbar li a.email-link:hover i {
+    color: white; /* Ensures the icon color changes on hover */
+}
+@keyframes rotate-icon {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#navbar li a.email-link:hover i {
+    animation: rotate-icon 0.5s ease-in-out;
+}
+@media (max-width: 768px) {
+    #navbar li a.email-link i {
+        font-size: 16px; /* Smaller icon for mobile devices */
+    }
+}
+
+@media (max-width: 480px) {
+    #navbar {
+        flex-direction: column; /* Stack the navbar items on smaller screens */
+    }
+
+    #navbar li {
+        margin: 5px 0; /* Adjust spacing for stacked items */
+    }
+}
