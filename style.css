@@ -185,12 +185,14 @@ input[type=text], input[type=email], textarea {
         margin: 5px 0; 
     }
 }
-.circle-image {
-    width: 100px; /* Adjust based on your preference */
-    height: 100px; /* Make height equal to the width for a perfect circle */
-    border-radius: 50%; /* This creates the circular shape */
-    object-fit: cover; /* Ensures the image covers the area without stretching. Useful for non-square images */
-    border: 2px solid rgb(130, 242, 231); /* Example: adds a white border */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Example: adds a subtle shadow */
+
+/* Circle Image Class */
+.circle-image { /* Used for profile picture */
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 2px solid rgb(130, 242, 231); 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
     margin: 10px;
 }
