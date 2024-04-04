@@ -93,12 +93,23 @@ section {
 #about{
     text-align: center;
     background-color:  #333333;
-    color:white ;
+    color:rgb(161, 159, 159) ;
     margin: 0; 
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    flex-direction: column; /* Stacks items vertically */
+    
 }
 #about h3{
     color: rgb(130, 242, 231);
 }
+.about-container {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: center; /* Centers content horizontally inside the container */
+    text-align: left; /* Aligns the text to the left for the paragraph */
+    gap: 20px; /* Adds some space between the image and the paragraph */
+}  
 
 /*
     Projects
